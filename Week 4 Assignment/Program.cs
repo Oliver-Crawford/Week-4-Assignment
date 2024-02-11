@@ -26,7 +26,7 @@ namespace Week_4_Assignment
         class Emp : Interface1
         {
             public string department;
-            public string salary;
+            private string salary;
             public Emp(string conDepartment, string conSalary)
             {
                 department = conDepartment;
@@ -53,6 +53,8 @@ namespace Week_4_Assignment
 
             CustomerExample.DoSomeWork();
             EmployeeExample.DoSomeWork();
+            //note that EmployeeExample.Salary is private, only the department and the method is available.
+            Console.WriteLine(EmployeeExample.department);
             StudentExmaple.DoSomeWork();
             Console.ReadLine();
         }
